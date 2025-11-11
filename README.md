@@ -17,7 +17,7 @@ PharmaSight is an automated biotech diligence workflow that gathers scientific e
 - `pip install -r requirements.txt` inside an activated virtual environment.
 - Google Gemini API key (`GOOGLE_API_KEY`).
 - LandingAI ADE API key (`VISION_AGENT_API_KEY`) for advanced PDF parsing.
-- Node.js 18+ and npm for running the React frontend (optional).
+- Node.js 18+ and npm for running the React frontend.
 
 ## Setup
 
