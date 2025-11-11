@@ -14,7 +14,7 @@ PharmaSight is an automated biotech diligence workflow that gathers scientific e
 
 ```bash
 git clone <your-repo-url>
-cd finAnalysis
+cd PharmaSight
 python -m venv venv
 # Windows
 venv\Scripts\activate
@@ -53,6 +53,7 @@ npm run dev
 Launch the REST API (defaults to `http://localhost:8000`):
 
 ```bash
+cd src
 uvicorn src.api:app --reload
 ```
 
