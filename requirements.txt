@@ -1,6 +1,12 @@
 # Google Gemini AI
 google-generativeai>=0.8.0
 
+# Agent F
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-core>=0.3.0
+langchain-google-genai>=0.3.0
+
 # Environment management
 python-dotenv>=1.0.0
 
