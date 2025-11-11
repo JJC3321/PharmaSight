@@ -2,15 +2,6 @@
 
 PharmaSight is an automated biotech diligence workflow that gathers scientific evidence, clinical trial activity, and company process documentation before producing an investor-ready PDF briefing. The core engine orchestrates Google Gemini with custom retrieval tooling, while a FastAPI service and React front end make the workflows accessible to product teams.
 
-## Key Capabilities
-
-- PubMed literature discovery with automatic proof-of-work handling for PubMed Central PDF downloads.
-- ClinicalTrials.gov landscape summaries, enriched with drug mechanism templates.
-- LandingAI ADE parsing for structured extraction from research PDFs, with graceful fallbacks to basic text extraction.
-- Gemini-powered metadata inference, full report synthesis, and generated reports.
-- PDF generation for stakeholders, plus a chat for lookups of specific insight.
-
-
 ## Prerequisites
 
 - Python 3.10 or newer.
@@ -64,15 +55,6 @@ Launch the REST API (defaults to `http://localhost:8000`):
 ```bash
 uvicorn src.api:app --reload
 ```
-
-## Pipeline Stages
-
-1. **Metadata inference** uses Gemini to enrich missing ticker, phase, or compound aliases before analysis.
-2. **Research sweep** leverages `search_and_parse_pubmed_papers` to pull PubMed metadata, resolve open-access PDFs, solve PMC proof-of-work prompts, and parse full-text with LandingAI ADE.
-3. **Trial landscape** runs `analyze_clinical_trial_phases` against ClinicalTrials.gov for up-to-date protocol summaries.
-4. **Company documentation cross-check** executes `load_company_process_reports` to ingest SOPs, readiness checklists, and other internal documentation.
-5. **Gemini synthesis** composes research insights, clinical risk factors, and company docs into a prediction narrative and scenario analysis.
-6. **Report generation** formats the findings into a branded PDF and exposes a structured object for downstream clients or the `/query` endpoint.
 
 ## Project Layout
 
