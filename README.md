@@ -57,20 +57,6 @@ cd src
 uvicorn src.api:app --reload
 ```
 
-## Project Layout
-
-```
-finAnalysis/
-├── src/
-│   ├── __init__.py
-│   ├── api.py        # FastAPI application with async job queue and report Q&A
-│   ├── main.py       # BiotechAnalysisSystem workflow and PDF generator
-│   └── tools.py      # PubMed, ClinicalTrials.gov, LandingAI, and PDF helpers
-├── frontend/         # PharmaSight React + TypeScript chat interface (Vite)
-├── requirements.txt  # Python dependencies
-└── README.md         # You are here
-```
-
 ## License
 
 This project is under the MIT License. See [LICENSE](LICENSE.md) for more information.
