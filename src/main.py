@@ -46,7 +46,7 @@ class BiotechAnalysisSystem:
         self.model_name = os.getenv("GEMINI_MODEL", "gemini-1.5-pro")
         print(f"Using Google Gemini API (Model: {self.model_name})")
         
-        # Check for LandingAI API key (optional)
+        # Check for LandingAI API key 
         if os.getenv("VISION_AGENT_API_KEY"):
             print("LandingAI API key found - will use advanced PDF parsing")
         else:
