@@ -67,7 +67,6 @@ finAnalysis/
 │   ├── main.py       # BiotechAnalysisSystem workflow and PDF generator
 │   └── tools.py      # PubMed, ClinicalTrials.gov, LandingAI, and PDF helpers
 ├── frontend/         # PharmaSight React + TypeScript chat interface (Vite)
-├── reports/          # Generated PDF deliverables
 ├── requirements.txt  # Python dependencies
 └── README.md         # You are here
 ```
